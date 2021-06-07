@@ -1,11 +1,12 @@
 <?php 
-	/* récupération du paramètre */
-    $arrivee = htmlspecialchars($_GET['date_arrivee']) ;
+
+  $arrivee = htmlspecialchars($_GET['date_arrivee']) ;
 	$depart = htmlspecialchars($_GET['date_depart']) ;
 	$place = htmlspecialchars($_GET['place']) ;
 	$idclient = htmlspecialchars($_GET['identifiant']);
 	$chambre = htmlspecialchars($_GET['chambre']);
 	
+
 
 	/* définition de la variable $reponse_client_existe  grâce à une requête SQL*/
     require "requete-identificationClient.php";

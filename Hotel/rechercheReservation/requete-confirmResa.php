@@ -15,7 +15,9 @@
 	$req = $bdd->prepare('SELECT id FROM `chambre` WHERE numero="'.$chambre.'";');
     $req->execute();
     $reponse_id_chambre = $req->fetchAll(PDO::FETCH_ASSOC);
+
 	$id_chambre = intval($reponse_id_chambre[0]["id"]);
+
 	
 /*	REQUETE PRÉPARÉE  puis EXÉCUTÉE      -> ajout des/de la chambre(s)	*/
 	$req = $bdd->prepare('INSERT INTO `comporte`(`idReservation`, `idChambre`) VALUES ("'.$reservation.'","'.$id_chambre.'");');

@@ -17,7 +17,9 @@
 			<input type="hidden" name="date_depart" value="<?=$depart?>"/>
 			<input type="hidden" name="place" value="<?=$place?>"/>
 			<input type="hidden" name="chambre" value="<?=$chambre?>"/>
+
 			<input type="submit" value="Saisir un autre client"/>
+
 		</form>
 	</body>
 </html>

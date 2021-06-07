@@ -1,0 +1,30 @@
+@font-face
+{
+	font-family: 'GreatVibes-Regular';
+	src: url('style/GreatVibes-Regular.ttf') format('truetype');
+}
+
+table.bandeau
+{
+	background-position:100%;
+	background-image: url(style/bandeau.jpg);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 250px;
+	width: 100%;
+}
+
+h1.bandeau
+{
+	text-align: center;
+	left: 65%;
+	font-size: 35px;
+	font-family : 'GreatVibes-Regular';
+	text-decoration: underline;
+}
+
+a.bandeau
+{
+	color: rgb(172,0,202);
+}

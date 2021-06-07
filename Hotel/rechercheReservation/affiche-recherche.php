@@ -25,17 +25,17 @@
 		<li>
 			<form method="get" action="../identificationClient/entrer-identificationClient.php">
 				<?php
-					foreach($element as $chambres)
+					foreach($element as $chambre)
 					{
-						echo ($chambres);
+						echo ($chambre);
 					}
 				?>
+				
+				<input type="hidden" name="date_arrivee" value="<?=$arrivee?>"/>
+				<input type="hidden" name="date_depart" value="<?=$depart?>"/>
+				<input type="hidden" name="place" value="<?=$place?>"/>
+				<input type="hidden" name="chambre" value="<?=$chambre?>"/>
 				<input type="submit" value="Reserver"/>
-				<input type="hidden" name="date_arrivee" value="<?$date_arrivee?>"/>
-				<input type="hidden" name="date_depart" value="<?$date_depart?>"/>
-				<input type="hidden" name="place" value="<?$place?>"/>
-				<input type="hidden" name="chambre" value="<?$chambres?>"/>
-
 			</form>
 		</li>
 			 <?php endforeach ;?>

@@ -3,7 +3,7 @@
 
 
 /*  REQUETE PRÉPARÉE  puis EXÉCUTÉE      */
-	$req = $bdd->prepare('SELECT 1 FROM `client` WHERE id='.$idclient.';');
+	$req = $bdd->prepare('SELECT COUNT(*) FROM `client` WHERE id='.$idclient.';');
     $req->execute();
     $reponse_client_existe = $req->fetchAll(PDO::FETCH_ASSOC);
 /* Pour voir la reponse renvoyée par la requête : dé-commenter l'instruction suivante */
